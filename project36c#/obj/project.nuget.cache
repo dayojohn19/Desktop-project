@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ETfbi9OUfFDh2+03nHzWZFrO6p29M+/a4lE/nqfGLD4NhVEoQ0TJjiYhKtPJ/ozMkry9Rm6kpYXAleQuk3df+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\Projects\\project36c#\\project36c#.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\fsharp.core\\4.7.2\\fsharp.core.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}

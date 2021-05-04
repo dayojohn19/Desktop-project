@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base target="_top">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+
+    </head>
+    <body>
+        <script>
+            function doGet(request) {
+    return HtmlService.createTemplateFromFile('index').evaluate();
+  }
+  
+  
+  
+  /* @Include JavaScript and CSS Files */
+  function include(filename) {
+    return HtmlService.createHtmlOutputFromFile(filename)
+        .getContent();
+  }
+  
+  /* @Process Form */
+  function processForm(formObject) {
+    var url = "https://docs.google.com/spreadsheets/d/1nQSMKr_eMsWI6PCS9ekVW3F6UcQ5kN7w8_OlRX9M_4g/edit#gid=0";
+    var ss = SpreadsheetApp.openByUrl(url);
+    var ws = ss.getSheetByName("EM");
+    
+    ws.appendRow([formObject.first_name,
+                  formObject.last_name, ]);
+  }
+                  
+                   function getNewHtml(e) {
+        var html = HtmlService
+          .createTemplateFromFile('index') // uses templated html
+          .evaluate()
+          .getContent();
+        return html;
+      }
+       // Prevent forms from submitting.
+  function preventFormSubmit() {
+    var forms = document.querySelectorAll('form');
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener('submit', function(event) {
+      event.preventDefault();
+      });
+    }
+  }
+  window.addEventListener('load', preventFormSubmit);    
+      
+      
+  function handleFormSubmit(formObject) {
+    google.script.run.processForm(formObject);
+    document.getElementById("myForm").reset();
+  }
+        </script>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <form id="myForm" onsubmit="handleFormSubmit(this)" value="" required> 
+                        <p class="h4 mb-4 text-center">Kumusta Kalapatid</p>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="first_name">Name</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Pangalan"
+                                onkeyup="this.value = this.value.toUpperCase();" value="" required> 
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="last_name">Comment</label>
+                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Iyong Sasabihin" onkeyup="this.value = this.value.toUpperCase();" value="" required>
+                            </div>
+ 
+
+
+                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    </form>
+                    <div id="output"></div>
+
+
+        
+                </div>
+            </div>      
+        </div>
+        <p style="font-size:40px;" > BAKA MAY GUSTO KANG SABIHIN O IMUNGKAHI</p>
+        <br>
+        
+        
+         <br><br> <p > REFRESH PAGKALIPAS NG 2 MINUTO PARA MAKITA ANG IYONG SINABI</p>
+   
+          
+
+    <script>
+      function refreshApp(newHtml) {
+        document.open();
+        document.write(newHtml);
+        document.close();
+      }
+    </script>
+    
+    
+        <iframe wframeborder="0" style="overflow:hidden;height:2000px;width:100%"  seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQAWD2r6li38uNr_nEBjYiEn4o23lTdzHp3Q5M40vEDpdvxeacRTVkRFyfxhJmJBYkmG0_xsGY9vCxQ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </body>
+</html>

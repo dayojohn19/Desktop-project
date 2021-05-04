@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+  }
+  .box{
+    width: 650px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+  }
+  .box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  .box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+
+
+  .box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+  }
+
+
+  
+  .box p{
+    text-align: justify;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  .box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+  }
+  .box li a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+  }
+  .box li a:hover{
+    color: #b9b9b9;
+  }
+ .button{
+  font-size: 33px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 auto;
+  color: #dcfbb4;
+  background-color: rgb(175, 54, 54);
+  border: 0.4em solid #d4f7da;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  width: 8em;
+  height: 4em;
+  line-height: 3em;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0,0,0,0.1), inset 0 0 0 rgba(0,0,0,0.1);
+  text-align: center;
+  text-emphasis-color: black;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+  box-shadow: 0px 0px 20px #000000;
+  margin: auto;
+ 
+  overflow: hidden;
+  
+  position: relative;
+
+   
+
+
+ }
+
+ .click1
+{
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 auto;
+  color: #dcfbb4;
+  background-color: rgb(170, 168, 33);
+  border: 0.4em solid #d4f7da;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  width: 12em;
+  height: 4em;
+  line-height: 3em;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0,0,0,0.1), inset 0 0 0 rgba(0,0,0,0.1);
+  text-align: center;
+
+  border-style: solid;
+    border-width: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 20px #000000;
+    margin: auto;
+   
+    overflow: hidden;
+    
+    position: relative;
+
+
+}
+
+.click3
+{
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 auto;
+  color: #dcfbb4;
+  background-color: rgb(79, 160, 41);
+  border: 0.4em solid #d4f7da;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  width: 12em;
+  height: 12em;
+  line-height: 8em;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(83, 175, 90, 0.1), inset 0 0 0 rgba(0,0,0,0.1);
+  text-align: center;
+ text-size-adjust: 1000%;
+ -moz-text-size-adjust: 200px;
+  border-style: solid;
+    border-width: 30px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 20px #000000;
+    margin: auto;
+    margin: auto;
+    overflow: hidden;
+    
+    position: relative;
+
+
+}
+
+.click4
+{
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0 auto;
+  color: #dcfbb4;
+  background-color: rgb(108, 45, 160);
+  border: 0.4em solid #d4f7da;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  width: 12em;
+  height: 12em;
+  line-height: 8em;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(83, 175, 90, 0.1), inset 0 0 0 rgba(0,0,0,0.1);
+  text-align: center;
+ text-size-adjust: 1000%;
+ -moz-text-size-adjust: 200px;
+  border-style: solid;
+    border-width: 30px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 20px #000000;
+    margin: auto;
+    margin: auto;
+    overflow: hidden;
+    
+    position: relative;
+
+
+}
+
+
+
+.divi
+{
+  margin: auto;
+}
+  
+.mydiv {
+
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+ 
+  width: 200px;
+  height: auto;
+  border: 15px solid green;
+  padding: 5px;
+  margin: auto;
+}
+
+
+  .frame2
+  
+{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 20px #000000;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    position: relative;
+}
+.frame3
+  
+{
+    border-style: solid;
+    border-width: 10px;
+    border-color: #ffffff;
+    box-shadow: 0px 0px 20px #000000;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    position: relative;
+}
+
+
+
+
+.racename{
+  font-size: 33px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 1 auto;
+  color: #dcfbb4;
+  background-color: rgb(175, 54, 54);
+  border: 180em solid #d4f7da;
+  border-radius: 200%;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  width: 500px;
+    height: 170px;
+  
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0,0,0,0.1), inset 3 0 0 rgba(0,0,0,0.1);
+  text-align: center;
+  text-emphasis-color: black;
+  border-style: solid;
+  border-width: 18px;
+ 
+  box-shadow: 1px 1px 20px #000000;
+  margin: auto;
+ 
+  
+  border-style: solid;
+  border-width: 20x;
+  border-color: #a17922;
+  box-shadow: 0px 0px 20px #000000;
+  margin: 2;
+ }
